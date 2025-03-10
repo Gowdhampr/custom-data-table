@@ -57,7 +57,7 @@ const DataTable = <T extends { id: number | string }>({
         onClickDownload(selectedItems);
     };
 
-    const uniqueColumns: String[] = [];
+    const uniqueColumns: string[] = [];
 
     data.forEach((obj) => {
         Object.keys(obj).forEach((key) => {
