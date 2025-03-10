@@ -57,16 +57,6 @@ const DataTable = <T extends { id: number | string }>({
         onClickDownload(selectedItems);
     };
 
-    const uniqueColumns: string[] = [];
-
-    data.forEach((obj) => {
-        Object.keys(obj).forEach((key) => {
-            if (!uniqueColumns.includes(key)) {
-                uniqueColumns.push(key);
-            }
-        });
-    });
-
     return (
         <div className={Styles.container}>
             <div className={Styles.header}>
